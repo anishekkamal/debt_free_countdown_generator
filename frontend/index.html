@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Debt-Free Countdown Generator</title>
 
-    <!-- NEW: Link to Rethink Sans from Google Fonts -->
+    <!-- Link to Rethink Sans from Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- NEW: Link to Satoshi font from CDN -->
+    <!-- Link to Satoshi font from CDN -->
     <link rel="stylesheet" href="https://cdn.fontshare.com/wf/assets/css/satoshi.css">
 
     <link rel="stylesheet" href="static/css/style.css">
@@ -18,14 +18,21 @@
 <body>
 
     <div class="container">
-        <h1>Debt-Free Countdown Generator</h1>
+        <!-- NEW: Container for Logo and Title -->
+        <div class="main-header">
+            <!-- NEW: Add logo image here -->
+            <img src="static/images/image2.png" alt="Debtzero.club Logo" class="header-logo"> <!-- ASSUMING filename is debtzero_logo.png -->
+            <h1>Debt-Free Countdown Generator</h1>
+        </div>
+         <!-- END NEW: Container for Logo and Title -->
+
         <p>Enter your total debt, monthly payment, and average APR to estimate your debt-free date!</p>
 
          <div class="disclaimer">
             <strong>Disclaimer:</strong> This calculator provides an estimate based on the provided total debt, a fixed monthly payment, and a single average APR. It does not account for minimum payments, varying APRs across different debts, fees, or changes in payment amount. Consult a financial advisor for personalized advice.
         </div>
 
-
+        <!-- ... rest of the form ... -->
         <form id="countdown-form">
             <div class="form-group">
                 <label for="total-debt">Total Outstanding Debt ($):</label>
@@ -42,6 +49,7 @@
 
             <button type="submit">Generate Countdown</button>
         </form>
+        <!-- ... end of form ... -->
 
         <div id="results-container" class="results-container hidden">
              <div id="error-message" class="error-message hidden">
@@ -66,7 +74,7 @@
                  <div class="card-footer">
                      <!-- Use relative path to your local logo file -->
                      <img src="static/images/image2.png" alt="Debtzero.club Logo" class="footer-logo"> <!-- ASSUMING filename is debtzero_logo.png -->
-                     <p>Powered by <a href="https://debtzero.club/">Debtzero.club</a></p> <!-- REPLACE with your actual website -->
+                     <p>Powered by <a href="https://debtzero.club/">Debtzero.club</a></p> <!-- Updated URL -->
                  </div>
             </div>
 
