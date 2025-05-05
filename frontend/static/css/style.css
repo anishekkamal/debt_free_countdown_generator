@@ -1,0 +1,308 @@
+/* General Styles */
+body {
+    font-family: "Rethink Sans", sans-serif; /* Updated body font */
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #FFFDF5;
+    color: #282828;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1, h2 {
+    font-family: "Satoshi", sans-serif; /* Updated heading font */
+    color: #007661;
+    border-bottom: 2px solid #e9ecef;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+h1 { margin-top: 0; }
+
+/* Disclaimer Styles */
+.disclaimer {
+    background-color: #f0f0e0;
+    border: 1px solid #e0e0d0;
+    border-radius: 4px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #495057;
+    font-size: 0.85em;
+    font-family: "Rethink Sans", sans-serif; /* Ensure disclaimer uses Rethink Sans if body inheritance isn't enough */
+}
+.disclaimer strong {
+    color: #343a40;
+}
+
+
+/* Form Group Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #495057;
+    font-family: "Rethink Sans", sans-serif; /* Ensure labels use Rethink Sans */
+}
+
+input[type="number"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #282828;
+    font-family: "Rethink Sans", sans-serif; /* Ensure input text uses Rethink Sans */
+}
+
+/* Submit Button Styles */
+button {
+    font-family: "Satoshi", sans-serif; /* Updated button font */
+    background-color: #007661;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f4e;
+}
+
+/* Results Container Styles */
+.results-container {
+    margin-top: 30px;
+    padding-top: 20px;
+}
+
+.results-container.hidden {
+    display: none;
+}
+
+/* --- Shareable Visual Card Styling --- */
+.freedom-date-card {
+    border: 2px solid #007661;
+    border-radius: 10px;
+    background-color: #e0f2f1;
+    margin-bottom: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    font-family: "Rethink Sans", sans-serif; /* Ensure card body text uses Rethink Sans */
+}
+
+.card-header {
+    background-color: #007661;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: "Satoshi", sans-serif; /* Updated card header font */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.freedom-date-label {
+    font-size: 1em;
+    color: #555;
+    margin: 0 0 5px 0;
+}
+
+.freedom-date-value {
+    font-size: 2em;
+    font-weight: bold;
+    color: #007661;
+    margin: 0 0 20px 0;
+    font-family: "Satoshi", sans-serif; /* Optional: Use Satoshi for the prominent date value */
+}
+
+.countdown-label {
+    font-size: 0.9em;
+    color: #777;
+    margin: 0 0 5px 0;
+}
+
+#countdown-value {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #F85C0D;
+    margin: 0 0 20px 0;
+    font-family: "Satoshi", sans-serif; /* Optional: Use Satoshi for the highlighted countdown value */
+}
+
+
+.stats {
+    border-top: 1px dashed #ced4da;
+    padding-top: 15px;
+    font-size: 0.9em;
+    color: #555;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.stats p {
+    margin: 0;
+    flex-basis: 45%;
+    text-align: left;
+    font-family: "Rethink Sans", sans-serif; /* Ensure stats text uses Rethink Sans */
+}
+
+/* Card Footer Styles */
+.card-footer {
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    font-size: 0.8em;
+    color: #6c757d;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: "Rethink Sans", sans-serif; /* Ensure footer text uses Rethink Sans */
+}
+
+.card-footer a {
+    color: #007661;
+    text-decoration: none;
+}
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Logo Image Style */
+.card-footer .footer-logo {
+    height: 20px;
+    width: auto;
+    vertical-align: middle;
+}
+
+
+/* Download Button Styling */
+.download-button {
+    font-family: "Satoshi", sans-serif; /* Updated button font */
+    background-color: #007661;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #005f4e;
+}
+
+.download-button.hidden {
+    display: none;
+}
+
+
+/* Modal Styling */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 90%;
+    overflow: hidden;
+    position: relative;
+}
+
+.modal-header {
+    background-color: #dc3545;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    font-family: "Satoshi", sans-serif; /* Updated modal header font */
+}
+
+.modal-header h3 {
+    margin: 0;
+    color: white;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.close-button {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0 5px;
+}
+
+.close-button:hover {
+    color: #f8d7da;
+}
+
+.modal-body {
+    padding: 20px;
+    font-size: 1em;
+    color: #333;
+    font-family: "Rethink Sans", sans-serif; /* Ensure modal body text uses Rethink Sans */
+}
+
+.modal-body p {
+    margin: 0;
+}
+
+.modal-footer {
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    text-align: right;
+}
+
+/* Hide element */
+.hidden {
+    display: none;
+}

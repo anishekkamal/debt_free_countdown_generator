@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debt-Free Countdown Generator</title>
+
+    <!-- NEW: Link to Rethink Sans from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- NEW: Link to Satoshi font from CDN -->
+    <link rel="stylesheet" href="https://cdn.fontshare.com/wf/assets/css/satoshi.css">
+
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Debt-Free Countdown Generator</h1>
+        <p>Enter your total debt, monthly payment, and average APR to estimate your debt-free date!</p>
+
+         <div class="disclaimer">
+            <strong>Disclaimer:</strong> This calculator provides an estimate based on the provided total debt, a fixed monthly payment, and a single average APR. It does not account for minimum payments, varying APRs across different debts, fees, or changes in payment amount. Consult a financial advisor for personalized advice.
+        </div>
+
+
+        <form id="countdown-form">
+            <div class="form-group">
+                <label for="total-debt">Total Outstanding Debt ($):</label>
+                <input type="number" id="total-debt" step="0.01" min="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="monthly-payment">Total Monthly Payment ($):</label>
+                <input type="number" id="monthly-payment" step="0.01" min="0.01" required>
+            </div>
+             <div class="form-group">
+                <label for="avg-apr">Average Annual Interest Rate (APR %):</label>
+                <input type="number" id="avg-apr" step="0.01" min="0" required>
+            </div>
+
+            <button type="submit">Generate Countdown</button>
+        </form>
+
+        <div id="results-container" class="results-container hidden">
+             <div id="error-message" class="error-message hidden">
+             </div>
+
+            <div id="freedom-date-card" class="freedom-date-card">
+                 <div class="card-header">
+                     ✨ Your Estimated Debt-Free Date ✨
+                 </div>
+                 <div class="card-body">
+                     <p class="freedom-date-label">Freedom Date:</p>
+                     <p class="freedom-date-value" id="freedom-date-value">-</p>
+
+                     <p class="countdown-label">Estimated Time Until Freedom:</p>
+                     <p class="countdown-value" id="countdown-value">-</p>
+
+                     <div class="stats">
+                         <p>Total Months: <span id="total-months">-</span></p>
+                         <p>Total Interest Paid: <span id="total-interest">-</span></p>
+                     </div>
+                 </div>
+                 <div class="card-footer">
+                     <!-- Use relative path to your local logo file -->
+                     <img src="static/images/image2.png" alt="Debtzero.club Logo" class="footer-logo"> <!-- ASSUMING filename is debtzero_logo.png -->
+                     <p>Powered by <a href="https://debtzero.club/">Debtzero.club</a></p> <!-- REPLACE with your actual website -->
+                 </div>
+            </div>
+
+            <button id="download-card-btn" class="download-button hidden">Download Card as Image</button>
+
+
+             <div class="disclaimer">
+                <strong>Disclaimer:</strong> This calculator provides an estimate based on the provided total debt, a fixed monthly payment, and a single average APR. It does not account for minimum payments, varying APRs across different debts, fees, or changes in payment amount. Consult a financial advisor for personalized advice.
+            </div>
+        </div>
+
+
+    </div> <!-- closing div for .container -->
+
+    <!-- Modal Structure -->
+    <div id="error-modal" class="modal-backdrop hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Calculation Error</h3>
+                <span class="close-button" id="modal-close-button">×</span>
+            </div>
+            <div class="modal-body">
+                <p id="modal-message"></p>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Structure -->
+
+    <!-- Include html2canvas library -->
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+    <!-- Your custom script -->
+    <script src="static/js/script.js"></script>
+</body>
+</html>

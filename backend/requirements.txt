@@ -1,0 +1,5 @@
+fastapi>=0.104.1 # Or a recent version known to work with Pydantic V2
+uvicorn[standard]>=0.22.0
+pydantic>=2.0 # Explicitly use Pydantic V2
+python-dateutil>=2.8.2
+# Flask-CORS is not needed with FastAPI's built-in CORS
