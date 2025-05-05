@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/api/calculate-freedom-date', {
+            const response = await fetch('/api/calculate-freedom-date', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

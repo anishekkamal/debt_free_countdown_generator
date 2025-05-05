@@ -1,0 +1,28 @@
+# Ignore Python virtual environments
+venv/
+.venv/
+
+# Ignore build artifacts
+__pycache__/
+*.pyc
+.mypy_cache/
+.pytest_cache/
+.nox/
+.tox/
+dist/
+build/
+
+# Ignore IDE files
+.vscode/
+.idea/
+
+# Ignore Git history and config
+.git/
+.gitignore
+
+# Ignore local environment variables file
+.env
+
+# Ignore Docker-specific files if not needed in the build context
+# Dockerfile # You might want to ignore the Dockerfile itself from the copy context
+# .dockerignore # And the .dockerignore file itself
